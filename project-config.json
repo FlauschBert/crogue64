@@ -1,0 +1,13 @@
+{
+    "name": "crogue64",
+    "description": "Project crogue64",
+    "toolkit": "llvm",
+    "sources": [
+        "src/main.cpp"
+    ],
+    "build": "debug",
+    "definitions": [],
+    "includes": [],
+    "args": [],
+    "compiler": ""
+}

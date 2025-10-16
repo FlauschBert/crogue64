@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "C64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "compilerPath": "/opt/llvm-mos/bin/mos-clang++",
+            "cppStandard": "c++20",
+            "cStandard": "c99"
+        }
+    ],
+    "version": 4
+}
