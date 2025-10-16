@@ -1,5 +1,7 @@
 #include <cstdio>
 int main() {
-    std::printf("Hello, Crogue64!\n");
+    while(true) {
+        std::printf("Hello, Crogue64!\n");
+    }
     return 0;
 }
