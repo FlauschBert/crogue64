@@ -10,4 +10,5 @@ The `CMakePresets.json` file is already set up for this. You can use the presets
 ## Using VSCode with the VS64 Extension
 
 The VS64 extension renders both the `CMakePresets.json` and `CMakeLists.txt` files obsolete.  
-Only the `project-config.json` file is needed to configure the project.
+Only the `project-config.json` file is needed to configure the project.  
+Checkout the project description at https://github.com/rolandshacks/vs64?tab=readme-ov-file.
