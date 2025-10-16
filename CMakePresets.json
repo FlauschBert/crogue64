@@ -1,0 +1,46 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 4,
+    "minor": 1,
+    "patch": 2
+  },
+  "configurePresets": [
+    {
+      "name": "c64-debug",
+      "displayName": "C64 Debug",
+      "description": "Debug build for Commodore 64 using LLVM-MOS SDK",
+      "generator": "Ninja",
+      "toolchainFile": "/opt/llvm-mos/lib/cmake/llvm-mos-sdk/llvm-mos-toolchain.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "LLVM_MOS_PLATFORM": "c64",
+        "CMAKE_PREFIX_PATH": "/opt/llvm-mos"
+      }
+    },
+    {
+      "name": "c64-release",
+      "displayName": "C64 Release",
+      "description": "Release build for Commodore 64 using LLVM-MOS SDK",
+      "generator": "Ninja",
+      "toolchainFile": "/opt/llvm-mos/lib/cmake/llvm-mos-sdk/llvm-mos-toolchain.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "LLVM_MOS_PLATFORM": "c64",
+        "CMAKE_PREFIX_PATH": "/opt/llvm-mos"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "c64-debug",
+      "configurePreset": "c64-debug",
+      "displayName": "Build C64 Debug"
+    },
+    {
+      "name": "c64-release",
+      "configurePreset": "c64-release",
+      "displayName": "Build C64 Release"
+    }
+  ]
+}

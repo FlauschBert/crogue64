@@ -1,0 +1,8 @@
+# Crogue64 - A Roguelike for the Commodore 64
+
+## Compilation Setup with CMake and LLVM-MOS SDK
+
+Check https://github.com/llvm-mos/llvm-mos-sdk for downloading the SDK and extract the SDK package.  
+Provide the path to CMake with `-DCMAKE_PREFIX_PATH=/path/to/llvm-mos-sdk` (or set the path to the VSCode CMake extension settings: `cmake.additionalCompilerSearchDirs`).  
+You also have to specify the `-DCMAKE_TOOLCHAIN_FILE=/path/to/llvm-mos-sdk/lib/cmake/llvm-mos-sdk/llvm-mos-toolchain.cmake` for the linker settings.  
+The `CMakePresets.json` file is already set up for this. You can use the presets with `-DCMAKE_PRESET=c64-debug` or `-DCMAKE_PRESET=c64-release`.
