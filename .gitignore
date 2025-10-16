@@ -1,3 +1,4 @@
 out/build/c64-*/
 build/
 cmake-build-*/
+.cache/
