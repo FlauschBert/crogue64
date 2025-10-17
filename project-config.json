@@ -5,7 +5,7 @@
     "sources": [
         "src/main.cpp"
     ],
-    "build": "debug",
+    "build": "release",
     "definitions": [],
     "includes": [],
     "args": [],
