@@ -4,6 +4,7 @@
 // C64 memory locations
 constexpr uint16_t SCREEN_MEMORY = 0x0400;
 constexpr uint16_t COLOR_MEMORY = 0xD800;
+constexpr uint16_t RASTER_LINE_COUNTER = 0xD012;
 
 constexpr uint8_t SCREEN_WIDTH = 40;
 constexpr uint8_t SCREEN_HEIGHT = 25;
@@ -109,7 +110,7 @@ int main() {
     clearScreen();
 
     // Use raster line counter as seed
-    srand(*(volatile uint8_t*)0xD012);
+    srand(*(volatile uint8_t*)RASTER_LINE_COUNTER);
 
 #if 1
     for (uint8_t i = 0; i < 250; ++i) {
