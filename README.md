@@ -1,4 +1,4 @@
-# Crogue64 - A Roguelike for the Commodore 64
+# Crogue64 - A Roguelike for the Commodore 64 (WIP)
 
 ## Compilation Setup with CMake and LLVM-MOS SDK
 
